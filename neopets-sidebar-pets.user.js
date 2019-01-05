@@ -98,7 +98,7 @@ console.log('SIDEBAR PETS - script loaded');
        data.forEach(pet => {
            html += '<div style="font-weight: bold; padding: 0.5em 0 ;text-align: center; border: solid 2px #c9c9c9; background: '+userdata.background+'; width: 154px; overflow: hidden"><a style="color: '+userdata.text+'" title="View '+pet.name +'\'s Pet Page" href="'+pet.page+'">'+pet.name +'</a></div>';
            if (pet.sick) html += '<img title="This pet is sick!" style="position: absolute; right: 10px; margin-top: 10px;" src="https://i.imgur.com/iH67xQX.png" />';
-           html += '<a title="Customize '+pet.name+'" href="/customise/?view='+pet.name+'"><img style="background: white; box-sizing: border-box; padding: 2px; border: solid 2px #c9c9c9; border-top: 0; border-bottom: 0;" src="'+pet.image +'" /></a>';
+           html += '<a title="Customize '+pet.name+'" href="/customise/?view='+pet.name+'"><img style="width: 158px; background: white; box-sizing: border-box; padding: 2px; border: solid 2px #c9c9c9; border-top: 0; border-bottom: 0;" src="'+pet.image +'" /></a>';
        });
 
         html += '<div style="border: solid 2px #c9c9c9; padding:10px;"><a href="/quickref.phtml">Quick Reference</a></div>'
