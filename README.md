@@ -5,11 +5,11 @@ Adds all your neopets into your sidebar! The replaces the normal pet preview wit
 
 ## Installation
 
-1. Install tampermonkey for firefox or chrome
+1. Install tampermonkey for [firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/) or [chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en)
 
-2. Click this link: 
+2. Click this link: [https://github.com/skeddles/neopets-sidebar-pets/raw/master/neopets-sidebar-pets.user.js](https://github.com/skeddles/neopets-sidebar-pets/raw/master/neopets-sidebar-pets.user.js)
 
-3. Click install on the page that pops up
+3. Click install on the page that pops up.
 
 ## Usage 
 
