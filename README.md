@@ -1,6 +1,8 @@
 # Neopets Sidebar Pets Userscript
 Adds all your neopets into your sidebar! The replaces the normal pet preview with one that shows your 4 pets. It will also show an icon if your pet is sick.
 
+[![install](https://i.imgur.com/miFmofu.png)](https://github.com/skeddles/neopets-sidebar-pets/raw/master/neopets-sidebar-pets.user.js)
+
 ![screenshot of the sidebar](https://i.imgur.com/DyCktxK.png)
 
 ## Installation
