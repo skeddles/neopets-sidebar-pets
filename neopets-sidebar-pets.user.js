@@ -64,7 +64,8 @@ console.log('SIDEBAR PETS - script loaded');
                         else {
                            var data = {
                                username: username,
-                               background: window.getComputedStyle(document.getElementById('header')).getPropertyValue('background-color') || '#a3a3a3',
+                               background: window.getComputedStyle(document.querySelector('.sidebarTable .sidebarHeader.medText')).getPropertyValue('background-color') || '#a3a3a3',
+                               text: window.getComputedStyle(document.querySelector('.sidebarTable .sidebarHeader.medText')).getPropertyValue('color') || '#000',
                                lastUpdate: new Date(),
                                pets: petObjects
                            };
@@ -95,7 +96,7 @@ console.log('SIDEBAR PETS - script loaded');
         var html = '';
 
        data.forEach(pet => {
-           html += '<div style="font-weight: bold; padding: 0.5em 0 ;text-align: center; border: solid 2px #c9c9c9; background: '+userdata.background+'; width: 154px; overflow: hidden"><a style="color: black" title="View '+pet.name +'\'s Pet Page" href="'+pet.page+'">'+pet.name +'</a></div>';
+           html += '<div style="font-weight: bold; padding: 0.5em 0 ;text-align: center; border: solid 2px #c9c9c9; background: '+userdata.background+'; width: 154px; overflow: hidden"><a style="color: '+userdata.text+'" title="View '+pet.name +'\'s Pet Page" href="'+pet.page+'">'+pet.name +'</a></div>';
            if (pet.sick) html += '<img title="This pet is sick!" style="position: absolute; right: 10px; margin-top: 10px;" src="https://i.imgur.com/iH67xQX.png" />';
            html += '<a title="Customize '+pet.name+'" href="/customise/?view='+pet.name+'"><img style="background: white; box-sizing: border-box; padding: 2px; border: solid 2px #c9c9c9; border-top: 0; border-bottom: 0;" src="'+pet.image +'" /></a>';
        });
